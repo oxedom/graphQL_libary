@@ -3,7 +3,7 @@ import ApolloClient from 'apollo-boost';
 //Comps
 import BookList from "./comps/BookList";
 
-const client = new ApolloClient({ uri: 'http://localhost:4000/graphql'})
+const client = new ApolloClient({ cache, uri: 'http://localhost:4000/graphql'})
 
 function App() {
   return (

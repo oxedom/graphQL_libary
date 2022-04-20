@@ -1,9 +1,8 @@
-import { ApolloProvider } from 'react-apollo'
-import ApolloClient from 'apollo-boost';
+import { ApolloProvider, ApolloClient, InMemoryCache} from '@apollo/client'
 //Comps
 import BookList from "./comps/BookList";
 
-const client = new ApolloClient({ cache, uri: 'http://localhost:4000/graphql'})
+const client = new ApolloClient({uri: 'http://localhost:4000/graphql',  cache: new InMemoryCache()})
 
 function App() {
   return (

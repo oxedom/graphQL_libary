@@ -9,7 +9,7 @@ const config = require('./config/config')
 
 //alow cross-origin requests
 const cors = require('cors')
-app.use(cors)
+app.use(cors())
 
 //connect to db 
 mongoose.connect(config)

@@ -21,7 +21,7 @@ function BookList() {
 
     return (
         <>
-            <h1>All good, got'em Data!</h1>
+            <h1>All good, got'em Data! {data.books.map(el => { return <div key={el.id}> {el.name} </div>} ) }</h1>
         </>
     )
 }
